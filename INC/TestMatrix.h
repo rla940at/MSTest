@@ -2,7 +2,7 @@
 
 #include "../INC/Matrix.h"
 
-void Test1(void) {
+void MatrixTest1(void) {
 	std::cout << " operator *= test \n\n";
 	std::vector<double> v = { 1,0,3,4 };
 
@@ -128,7 +128,7 @@ void Test1(void) {
 	}
 }
 
-void Test2(void) {
+void MatrixTest2(void) {
 	std::cout << "operator * test \n\n";
 	std::vector<double> v = { 1,0,3,4 };
 
@@ -207,7 +207,7 @@ void Test2(void) {
 	std::cout << (ref4 == m3 * m3t) << "\n";
 }
 
-void Test3(void) {
+void MatrixTest3(void) {
 	std::cout << "test operator += \n\n";
 
 	std::vector<double> v = { 1,0,3,4 };
@@ -334,7 +334,7 @@ void Test3(void) {
 	}
 }
 
-void Test4(void) {
+void MatrixTest4(void) {
 	std::cout << "test operator + \n\n";
 	std::vector<double> v = { 1,0,3,4 };
 
@@ -413,7 +413,7 @@ void Test4(void) {
 	std::cout << (ref4 == m3 + m3t) << "\n";
 }
 
-void Test5(void) {
+void MatrixTest5(void) {
 	std::cout << "test operator -= \n\n";
 	std::vector<double> v = { 1,0,3,4 };
 
@@ -539,7 +539,7 @@ void Test5(void) {
 	}
 }
 
-void Test6(void){
+void MatrixTest6(void){
 	std::cout << "test operator - \n\n";
 	std::vector<double> v = { 1,0,3,4 };
 
@@ -618,7 +618,7 @@ void Test6(void){
 	std::cout << (ref4 == m3 - m3t) << "\n";
 }
 
-void Test7(void) {
+void MatrixTest7(void) {
 	std::cout << " test determinant \n\n";
 	std::vector<double> v = { 1,0,3,4 };
 	std::vector<double> v2 = { 1,3,4 };
@@ -644,7 +644,7 @@ void Test7(void) {
 	std::cout << (ref2 == Math::determinant(m3t)) << "\n";
 }
 
-void Test8(void) {
+void MatrixTest8(void) {
 	std::cout << " test inverse \n\n";
 	std::vector<double> v = { 1,0,3,4 };
 	std::vector<double> v2 = { 1,3,4 };
